@@ -10,6 +10,7 @@ class Widget {
     }
 
     // 返回一个单例
+    // 全局环境中 如果单例存在则返回， 不存在则 new 一个新的然后返回
     static single() {
 
         return this.instance || (new this())
